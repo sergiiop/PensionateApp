@@ -1,7 +1,8 @@
+import { useRoutes } from './routes'
+
 const App = () => {
-  return (
-    <div className='App' />
-  )
+  const { Routes } = useRoutes()
+  return <Routes />
 }
 
 export default App
