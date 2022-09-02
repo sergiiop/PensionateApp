@@ -4,6 +4,8 @@
   --clr-gray: hsl(0, 0%, 41%);
   --clr-white: hsl(0, 0%, 98%);
   --clr-accent: hsl(192, 100%, 50%);
+  --clr-accent-100: hsl(192, 84%, 80%);
+  --clr-accent-400: hsl(192, 97%, 70%);
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -23,6 +25,9 @@
 
   --fs-nav: var(--fs-600);
   --fs-button: var(--fs-500);
+  --fs-body: var(--fs-500);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
 
   --size-100: 0.25rem;
   --size-200: 0.5rem;
@@ -35,24 +40,11 @@
   --size-900: 5rem;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 40em) {
   :root {
-    --fs-800: 5rem;
-    --fs-700: 2.5rem;
-    --fs-600: 1.5rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1rem;
-  }
-}
-
-@media (min-width: 45em) {
-  :root {
-    /* font-sizes */
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+    --fs-body: var(--fs-600);
   }
 }
 
@@ -96,6 +88,8 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
 }
 
 /* A elements that don't have a class get default styles */

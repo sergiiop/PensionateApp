@@ -7,6 +7,7 @@ const Navbar = ({ visible }) => {
   useEffect(() => {
     navbar.current.toggleAttribute('data-visible')
   }, [visible])
+
   return (
     <nav ref={navbar} className='primary-navigation' id='primary-navigation'>
       <ul aria-label='Primary' role='list' className='nav-list'>
