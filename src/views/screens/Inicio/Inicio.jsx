@@ -1,11 +1,16 @@
 import { useLayouts } from '../../layouts'
+import { useComponents } from '../../components'
 
 const Inicio = () => {
   const { PublicLayout } = useLayouts()
+  const { Hero, Services, Cta, Contact } = useComponents()
 
   return (
     <PublicLayout>
-      <h1>Hello world</h1>
+      <Hero />
+      <Services />
+      <Cta />
+      <Contact />
     </PublicLayout>
   )
 }

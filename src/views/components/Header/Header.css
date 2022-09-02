@@ -1,0 +1,9 @@
+.primary-header {
+  margin-top: var(--size-600);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

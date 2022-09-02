@@ -1,8 +1,15 @@
+import { useComponents } from '../../components'
+
 const PublicLayout = ({ children }) => {
+  const { Header, Footer } = useComponents()
   return (
     <>
-      <header>my header</header>
-      {children}
+      {/* TODO: Header */}
+      <Header />
+      <main>
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }
