@@ -17,11 +17,11 @@
     display: inline-block;
     width: 32px;
     height: 5px;
-    background-color: hsl(var(--clr-dark));
+    background-color: var(--clr-dark);
     transition: all 0.3s ease;
   }
 
-  /* .mobile-nav-toggle[aria-expanded='true'] > :nth-child(1) {
+  .mobile-nav-toggle[aria-expanded='true'] > :nth-child(1) {
     transform: rotate(-45deg) translate(-8px, 6px);
   }
 
@@ -31,5 +31,5 @@
 
   .mobile-nav-toggle[aria-expanded='true'] > :nth-child(3) {
     transform: rotate(45deg) translate(-8px, -6px);
-  } */
+  }
 }

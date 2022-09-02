@@ -1,7 +1,15 @@
-const Navbar = () => {
+import { useEffect, useRef } from 'react'
+import './Navbar.css'
+
+const Navbar = ({ visible }) => {
+  const navbar = useRef(null)
+
+  useEffect(() => {
+    navbar.current.toggleAttribute('data-visible')
+  }, [visible])
   return (
-    <nav class='primary-navigation' id='primary-navigation'>
-      <ul aria-label='Primary' role='list' class='nav-list'>
+    <nav ref={navbar} className='primary-navigation' id='primary-navigation'>
+      <ul aria-label='Primary' role='list' className='nav-list'>
         <li>
           <a href='#about'>Nosotros</a>
         </li>
