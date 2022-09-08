@@ -1,10 +1,10 @@
-const SectionLayout = ({ children }) => {
+import { Container, SectionContainer } from './SectionContainer.styled'
+
+const SectionLayout = ({ children, background }) => {
   return (
-    <section className='padding-block-800'>
-      <div className='container'>
-        {children}
-      </div>
-    </section>
+    <SectionContainer className='padding-block-800' background={background}>
+      <Container className='container'>{children}</Container>
+    </SectionContainer>
   )
 }
 

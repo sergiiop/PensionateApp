@@ -1,8 +1,10 @@
 import { useIcons } from './Icons'
+import { useImages } from './Images'
 
 const useAssets = () => {
   return {
-    useIcons
+    useIcons,
+    useImages
   }
 }
 

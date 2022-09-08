@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import LogoComponent from './../LogoComponent'
 import ButtonNav from './ButtonNav'
 import Navbar from './Navbar'
@@ -15,16 +15,16 @@ const Header = () => {
   })
 
   return (
-    <header className='primary-header'>
-      <div className='container'>
-        <div className='nav-wrapper'>
-          <LogoComponent />
-          <ButtonNav handleVisible={setIsVisible} visible={isVisible} />
-          <Navbar visible={isVisible} />
-          <div className='container-buttons | display-sm-one display-md-inline-flex'>
-            <ButtonLink href='Login'>Login</ButtonLink>
-            <ButtonLink href second='Register'>Register</ButtonLink>
-          </div>
+    <header className='container'>
+      <div className='nav-wrapper'>
+        <LogoComponent />
+        <ButtonNav handleVisible={setIsVisible} visible={isVisible} />
+        <Navbar visible={isVisible} />
+        <div className='container-buttons | display-sm-one display-md-inline-flex'>
+          <ButtonLink href='Login'>Login</ButtonLink>
+          <ButtonLink href second='Register'>
+            Register
+          </ButtonLink>
         </div>
       </div>
     </header>
