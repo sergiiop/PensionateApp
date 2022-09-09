@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ export const HeroParagraph = styled.p`
   font-size: 1.4rem;
   line-height: 1;
   margin-top: 0.6rem;
-  width: 60ch;
+  max-width: 60ch;
 `
 
 export const HeroInput = styled.input`
